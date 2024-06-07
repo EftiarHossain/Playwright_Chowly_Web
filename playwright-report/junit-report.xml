@@ -1,0 +1,112 @@
+<testsuites id="" name="" tests="5" failures="5" skipped="0" errors="0" time="27.785150999993085">
+<testsuite name="tests/smoke/account.e2e.spec.ts" timestamp="1712222053701" hostname="chromium" tests="5" failures="5" skipped="0" time="19.093" errors="0">
+<testcase name="Account › Verify email should be static and phone number should be editable" classname="tests/smoke/account.e2e.spec.ts" time="14.834">
+<failure message="account.e2e.spec.ts:22:18 Verify email should be static and phone number should be editable" type="FAILURE">
+<![CDATA[  [chromium] › tests/smoke/account.e2e.spec.ts:22:18 › Account › Verify email should be static and phone number should be editable 
+
+    locator.waitFor: Target closed
+    =========================== logs ===========================
+    waiting for getByLabel('Click to view more Account links') to be visible
+    ============================================================
+
+       at pages/signin.ts:33
+
+      31 |     await waitForPageToLoad(this.page);
+      32 |
+    > 33 |     await this.headerPage.accountDropdownButton.waitFor({ state: "visible" });
+         |                                                 ^
+      34 |   }
+      35 | }
+      36 |
+
+        at Signin.signinUser (/Users/eftiarbd/Documents/e2e/e2e/pages/signin.ts:33:49)
+        at /Users/eftiarbd/Documents/e2e/e2e/tests/smoke/account.e2e.spec.ts:12:5
+]]>
+</failure>
+</testcase>
+<testcase name="Account › Should update Contact Information when user input all the valid information and verify updated Contact Information is displaying" classname="tests/smoke/account.e2e.spec.ts" time="1.707">
+<failure message="account.e2e.spec.ts:31:18 Should update Contact Information when user input all the valid information and verify updated Contact Information is displaying" type="FAILURE">
+<![CDATA[  [chromium] › tests/smoke/account.e2e.spec.ts:31:18 › Account › Should update Contact Information when user input all the valid information and verify updated Contact Information is displaying 
+
+    page.goto: Navigation failed because page was closed!
+    =========================== logs ===========================
+    navigating to "https://koala-labs.sandbox.order.koala.io/login", waiting until "load"
+    ============================================================
+
+       6 | test.describe("Account", () => {
+       7 |   testWithFixture.beforeEach(async ({ page, signInPage, headerPage }) => {
+    >  8 |     await page.goto(`/login`);
+         |                ^
+       9 |
+      10 |     await page.evaluate(() => window.localStorage.clear());
+      11 |
+
+        at /Users/eftiarbd/Documents/e2e/e2e/tests/smoke/account.e2e.spec.ts:8:16
+]]>
+</failure>
+</testcase>
+<testcase name="Account › Should transfer user to the Store Menu page when user hit the order now from fav location card" classname="tests/smoke/account.e2e.spec.ts" time="1.254">
+<failure message="account.e2e.spec.ts:59:18 Should transfer user to the Store Menu page when user hit the order now from fav location card" type="FAILURE">
+<![CDATA[  [chromium] › tests/smoke/account.e2e.spec.ts:59:18 › Account › Should transfer user to the Store Menu page when user hit the order now from fav location card 
+
+    page.goto: Navigation failed because page was closed!
+    =========================== logs ===========================
+    navigating to "https://koala-labs.sandbox.order.koala.io/login", waiting until "load"
+    ============================================================
+
+       6 | test.describe("Account", () => {
+       7 |   testWithFixture.beforeEach(async ({ page, signInPage, headerPage }) => {
+    >  8 |     await page.goto(`/login`);
+         |                ^
+       9 |
+      10 |     await page.evaluate(() => window.localStorage.clear());
+      11 |
+
+        at /Users/eftiarbd/Documents/e2e/e2e/tests/smoke/account.e2e.spec.ts:8:16
+]]>
+</failure>
+</testcase>
+<testcase name="Account › Should update favourite location when user edit Favourite Location on account page" classname="tests/smoke/account.e2e.spec.ts" time="0.654">
+<failure message="account.e2e.spec.ts:69:18 Should update favourite location when user edit Favourite Location on account page" type="FAILURE">
+<![CDATA[  [chromium] › tests/smoke/account.e2e.spec.ts:69:18 › Account › Should update favourite location when user edit Favourite Location on account page 
+
+    page.goto: net::ERR_ABORTED; maybe frame was detached?
+    =========================== logs ===========================
+    navigating to "https://koala-labs.sandbox.order.koala.io/login", waiting until "load"
+    ============================================================
+
+       6 | test.describe("Account", () => {
+       7 |   testWithFixture.beforeEach(async ({ page, signInPage, headerPage }) => {
+    >  8 |     await page.goto(`/login`);
+         |                ^
+       9 |
+      10 |     await page.evaluate(() => window.localStorage.clear());
+      11 |
+
+        at /Users/eftiarbd/Documents/e2e/e2e/tests/smoke/account.e2e.spec.ts:8:16
+]]>
+</failure>
+</testcase>
+<testcase name="Account › Should update password successfully when user change the login password" classname="tests/smoke/account.e2e.spec.ts" time="0.644">
+<failure message="account.e2e.spec.ts:79:18 Should update password successfully when user change the login password" type="FAILURE">
+<![CDATA[  [chromium] › tests/smoke/account.e2e.spec.ts:79:18 › Account › Should update password successfully when user change the login password 
+
+    page.goto: net::ERR_ABORTED; maybe frame was detached?
+    =========================== logs ===========================
+    navigating to "https://koala-labs.sandbox.order.koala.io/login", waiting until "load"
+    ============================================================
+
+       6 | test.describe("Account", () => {
+       7 |   testWithFixture.beforeEach(async ({ page, signInPage, headerPage }) => {
+    >  8 |     await page.goto(`/login`);
+         |                ^
+       9 |
+      10 |     await page.evaluate(() => window.localStorage.clear());
+      11 |
+
+        at /Users/eftiarbd/Documents/e2e/e2e/tests/smoke/account.e2e.spec.ts:8:16
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>
